@@ -1,13 +1,26 @@
+/** {
+	border: solid red 1px;
+}*/
+
 body {
-  /*background: url(bg.jpg) no-repeat center center fixed;*/
+  background: url(bg1.jpg) no-repeat center center fixed;
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
 	padding-top: 40px;
 }
 
+.search {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.search h1, p {
+	color: white;
+}
+
 #nav {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 
