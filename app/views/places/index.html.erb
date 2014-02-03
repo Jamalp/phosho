@@ -1,0 +1,8 @@
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sint, ipsa cumque tempora saepe sequi magni consequuntur pariatur facilis assumenda labore consequatur ab dignissimos? Eius adipisci itaque reprehenderit porro voluptatem.</h1>
+<%= form_tag("/places", method: "get") do %>
+  <%= label_tag(:place, "Search for:") %>
+  <%= text_field_tag(:place) %>
+  <%= label_tag(:location, "Search for:") %>
+  <%= text_field_tag(:location) %>
+  <%= submit_tag("Search") %>
+<% end %>

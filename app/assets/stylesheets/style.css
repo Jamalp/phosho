@@ -1,0 +1,32 @@
+body {
+  /*background: url(bg.jpg) no-repeat center center fixed;*/
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+	padding-top: 60px;
+}
+
+#nav {
+  opacity: 0.8;
+}
+
+
+.thumbnail {
+  height: 330px;
+  width: 330px;
+  border-radius: 10000px;
+}
+
+.thumbnail img {
+  border-radius: 1000px;
+}
+
+.thumbnails {
+ margin-left: 60px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
