@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'instagram'
 gem 'foursquare2'
+gem 'owlcarousel-rails'
 # gem 'ember-rails'
 # gem 'ember-source', '1.3.0' # or the version you need
 # gem "twitter-bootstrap-rails"

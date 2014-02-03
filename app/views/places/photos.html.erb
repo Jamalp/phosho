@@ -1,20 +1,22 @@
- <h1 class="page-header">You're checking out <%= params[:place].titleize %><br>
+<body class="photosbg">
+ <h1 class="page-header">You're checking out <%= params[:place].titleize %> <br />
     <small>
       In <%= params[:location].titleize %>
     </small>
   </h1>
-<ul class="thumbnails">
-  <% @photos.each do |photo| %>
-    <li class="col-md-4">
-      <div class="thumbnail fancybox">
-        <% if photo.videos %>
-          <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
-        <% else %>
-          <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
+  <ul id="owl" class="thumbnails" >
+    <% @photos.each do |photo| %>
+      <li class="col-md-4">
+        <div class="thumbnail img-responsive animated fadeInDown">
+          <% if photo.videos %>
+            <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
+          <% else %>
+            <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
+          <% end %>
         <% end %>
-      <% end %>
-      </div>
-    </li>
-</ul>
+        </div>
+      </li>
+  </ul>
+</body>
 
   <!-- <div id="overlay"></div> -->
