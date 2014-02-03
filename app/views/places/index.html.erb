@@ -1,8 +1,15 @@
-<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sint, ipsa cumque tempora saepe sequi magni consequuntur pariatur facilis assumenda labore consequatur ab dignissimos? Eius adipisci itaque reprehenderit porro voluptatem.</h1>
-<%= form_tag("/places", method: "get") do %>
-  <%= label_tag(:place, "Search for:") %>
-  <%= text_field_tag(:place) %>
-  <%= label_tag(:location, "Search for:") %>
-  <%= text_field_tag(:location) %>
-  <%= submit_tag("Search") %>
-<% end %>
+<h1>Places</h1>
+<p>Location based search for Instagram</p>
+<div class="search">
+	<%= form_tag("/places", method: "get", class: "form-inline", role: "form") do %>
+		<div class="form-group">
+		  <%= label_tag(:place, "Name", class: "control-label") %>
+		  <%= text_field_tag(:place, nil, class: "form-control") %>
+		</div>
+		<div class="form-group">
+		  <%= label_tag(:location, "Location", class: "control-label") %>
+		  <%= text_field_tag(:location, nil, class: "form-control") %>
+		</div>
+		  <%= submit_tag("Search", class: "btn btn-primary") %>
+	<% end %>
+</div>
