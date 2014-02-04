@@ -10,6 +10,10 @@ ul {
 	list-style: none;
 }
 
+.btn {
+	margin-top: 1%;
+}
+
 /*Index*/
 
 .homebg {
@@ -52,8 +56,33 @@ ul {
   width: 90%;
 }
 
+/*About*/
+.about {
+	text-align: center;
+	color: white;
+	padding-top: 10%;
+}
+
+.about h1 {
+	font-size: 2em;
+}
+
+.about p {
+	font-size: 1.2em;
+	width: 40%;
+	margin-left: 30%;
+}
+.github{
+	padding-top: 60px;
+}
+
 
 	@media screen and (max-width: 768px) {
 	    body { padding-top: 40px; }
+	    .about p {
+			font-size: 1.2em;
+			width: 92%;
+			margin-left: 3%;
+		}
 	}
 }

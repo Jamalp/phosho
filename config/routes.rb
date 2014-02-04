@@ -1,6 +1,7 @@
 Places::Application.routes.draw do
   root 'places#index'
   get '/places' => 'places#photos'
+  get '/about' => 'places#about'
   # get  'places#about', as: :about
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
