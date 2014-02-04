@@ -3,10 +3,6 @@
 }*/
 
 body {
-  /*background: url(bg1.jpg) no-repeat center center fixed;*/
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
 	padding-top: 40px;
 }
 
@@ -15,6 +11,13 @@ ul {
 }
 
 /*Index*/
+
+.homebg {
+	background: url(bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
 .search {
 	text-align: center;
 	padding-top: 10%;
@@ -33,6 +36,7 @@ ul {
 .photosbg {
 	background-color: #ecf0f1;
 }
+
 .page-header {
 	text-align: center;
 }
@@ -53,9 +57,3 @@ ul {
 	    body { padding-top: 40px; }
 	}
 }
-
-
-
-#owl .thumbnail img{
-    display: block;
-	}

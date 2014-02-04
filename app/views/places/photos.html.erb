@@ -9,9 +9,9 @@
       <li class="col-md-4">
         <div class="thumbnail img-responsive animated fadeInDown">
           <% if photo.videos %>
-            <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
+            <%= image_tag photo.images.standard_resolution.url, class: "photo" %>
           <% else %>
-            <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
+            <%= image_tag photo.images.standard_resolution.url, class: "photo" %>
           <% end %>
         <% end %>
         </div>
