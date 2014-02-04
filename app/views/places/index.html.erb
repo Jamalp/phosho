@@ -1,16 +1,15 @@
 <body class="homebg">
-	
-<div class="search animated fadeIn">
-<h1>Places</h1>
-<p>Location based search for Instagram</p>
-	<%= form_tag("/places", method: "get", class: "form-inline", role: "form") do %>
-		<div class="form-group">
-		  <%= text_field_tag(:place, nil, class: "form-control", placeholder: "Name") %>
-		</div>
-		<div class="form-group">
-		  <%= text_field_tag(:location, nil, class: "form-control", placeholder: "City, State") %>
-		</div><br>
-		  <%= submit_tag("Search", class: "btn btn-primary") %>
-	<% end %>
-</div>
+	<div class="search animated fadeIn">
+	<h1>Places</h1>
+	<p>Location based search for Instagram</p>
+		<%= form_tag("/places", method: "get", class: "form-inline", role: "form") do %>
+			<div class="form-group">
+			  <%= text_field_tag(:place, nil, class: "form-control", placeholder: "Name") %>
+			</div>
+			<div class="form-group">
+			  <%= text_field_tag(:location, nil, class: "form-control", placeholder: "City, State") %>
+			</div><br>
+			  <%= submit_tag("Search", class: "btn btn-primary") %>
+		<% end %>
+	</div>
 </body>
