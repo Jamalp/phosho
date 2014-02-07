@@ -28,7 +28,7 @@ ul {
 .search h1, p {
 	color: white;
 }
-.search h1 {font-family: 'Pacifico', cursive;}
+.search h1 {font-family: 'Pacifico';}
 
 #nav {
   opacity: 0.9;
